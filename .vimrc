@@ -20,6 +20,7 @@ set incsearch
 set wildmenu
 
 set background=dark
+set runtimepath+=~/.vim/nerdtree
 
 nnoremap zj <C-w>j
 nnoremap zk <C-w>k
