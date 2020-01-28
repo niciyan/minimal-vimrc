@@ -1,3 +1,33 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'jiangmiao/auto-pairs'
+Plug 'mattn/emmet-vim'
+Plug 'Shougo/neosnippet'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'Shougo/unite.vim'
+Plug 'chrisgillis/vim-bootstrap3-snippets'
+Plug 'scrooloose/nerdtree'
+Plug 'thinca/vim-quickrun'
+Plug 'tpope/vim-commentary'
+Plug 'Shougo/neocomplete.vim'
+Plug 'tomasr/molokai'
+Plug 'tyru/open-browser.vim'
+Plug 'kannokanno/previm'
+Plug 'altercation/vim-colors-solarized'
+Plug 'othree/html5.vim'
+Plug 'tpope/vim-surround'
+Plug 'Shougo/vimproc.vim',{'build' : 'make'}
+Plug 'itchyny/lightline.vim'
+Plug 'w0ng/vim-hybrid'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'cocopon/iceberg.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'yegappan/grep'
+
+call plug#end()
+
 set fileencoding=utf-8
 set number
 set title
@@ -20,7 +50,7 @@ set incsearch
 set wildmenu
 
 set background=dark
-set runtimepath+=~/.vim/nerdtree
+colorscheme hybrid
 
 nnoremap zj <C-w>j
 nnoremap zk <C-w>k
