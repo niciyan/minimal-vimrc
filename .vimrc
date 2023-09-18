@@ -66,6 +66,8 @@ nnoremap zH <C-w>H
 nnoremap zL <C-w>L
 nnoremap <Space>z gUaw
 
+autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
+
 syntax on
 filetype plugin indent on
 
