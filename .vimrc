@@ -49,8 +49,12 @@ set smartcase
 set incsearch 
 set wildmenu
 
-set background=dark
-colorscheme hybrid
+try
+  set background=dark
+  colorscheme hybrid
+catch /^Vim\%((\a\+)\)\=:E185/
+  colorscheme default
+endtry
 
 nnoremap zj <C-w>j
 nnoremap zk <C-w>k

@@ -1,10 +1,13 @@
 set -e 
 
 cd "$(dirname "$0")"
-cp ./.vimrc ~/.vimrc
 
 mkdir -p ~/.vim/
-git clone https://github.com/scrooloose/nerdtree.git ~/.vim/nerdtree
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +'PlugInstall --sync' +qa
+
+cp ./.vimrc ~/.vimrc
 
 echo "\nDone"
 
